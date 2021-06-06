@@ -7,6 +7,14 @@ const MASAJISTA_PRECIOS = {
 };
 
 const CreateAppointment = () => {
+  const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
+  const Values = () => {
+    console.log(name, lastName, date, time, price);
+  };
+
   const [price, setPrice] = useState(0);
   const handleSelectChange = (masajista) => {
     const masajistaPrecio = MASAJISTA_PRECIOS[masajista];
@@ -18,19 +26,22 @@ const CreateAppointment = () => {
       <form>
         <div>
           <label>Ingrese su nombre</label>
-          <input type='text'></input>
+          <input type='text' onChange={(e) => setName(e.target.value)}></input>
         </div>
         <div>
           <label>Ingrese su apellido</label>
-          <input type='text'></input>
+          <input
+            type='text'
+            onChange={(e) => setLastName(e.target.value)}
+          ></input>
         </div>
         <div>
           <label>Fecha a elegir</label>
-          <input type='date'></input>
+          <input type='date' onChange={(e) => setDate(e.target.value)}></input>
         </div>
         <div>
           <label>Hora a elegir</label>
-          <input type='text'></input>
+          <input type='text' onChange={(e) => setTime(e.target.value)}></input>
         </div>
         <div>
           <label>Elija el masajista</label>
@@ -44,6 +55,11 @@ const CreateAppointment = () => {
           <h6>Precio: {price}</h6>
         </div>
       </form>
+      <div>
+        <button type='button' onClick={Values}>
+          Gracias
+        </button>
+      </div>
     </div>
   );
 };
