@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import CreateAppointment from './components/CreateAppointment/index';
 
 function App() {
   return (
-    <div className="App">
-    <h1>Hola mundo</h1>
-    <p> Boca Juniors </p>
+    <div className='App'>
+      <CreateAppointment />
     </div>
   );
 }
