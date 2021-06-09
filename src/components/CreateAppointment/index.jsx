@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const MASAJISTA_PRECIOS = {
   maxi: 300,
@@ -59,6 +60,9 @@ const CreateAppointment = () => {
         <button type='button' onClick={Values}>
           Gracias
         </button>
+      </div>
+      <div>
+        <h4><Link to="/Turnos">Turnos solicitados</Link></h4>
       </div>
     </div>
   );
