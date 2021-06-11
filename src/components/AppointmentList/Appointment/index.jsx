@@ -6,7 +6,7 @@ const Appointment = ({ appointment }) => {
   return (
     <div>
       <p>
-        <b>Turno del paciente</b>
+        <b>Turno del paciente:</b>
       </p>
       <div>
         <label>Nombre: {name}</label>
