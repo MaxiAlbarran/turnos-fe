@@ -12,16 +12,18 @@ const CreateAppointment = () => {
   const [lastName, setLastName] = useState('');
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
-  const Values = () => {
-    console.log(name, lastName, date, time, price);
+  const [price, setPrice] = useState(0);
+
+  const handleOnClick = () => {
+    console.log({ name, lastName, date, time, price });
   };
 
-  const [price, setPrice] = useState(0);
   const handleSelectChange = (masajista) => {
     const masajistaPrecio = MASAJISTA_PRECIOS[masajista];
 
     setPrice(masajistaPrecio);
   };
+
   return (
     <div>
       <form>
@@ -57,12 +59,14 @@ const CreateAppointment = () => {
         </div>
       </form>
       <div>
-        <button type='button' onClick={Values}>
+        <button type='button' onClick={handleOnClick}>
           Gracias
         </button>
       </div>
       <div>
-        <h4><Link to="/Turnos">Turnos solicitados</Link></h4>
+        <h4>
+          <Link to='/Turnos'>Turnos solicitados</Link>
+        </h4>
       </div>
     </div>
   );
