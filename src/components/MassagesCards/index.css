@@ -1,0 +1,48 @@
+.card {
+  background: rgb(212, 230, 241, 0.5) !important;
+  margin: 80px 15px 15px 15px;
+  text-align: center;
+  transition: 0.8s;
+
+}
+
+.card:hover {
+  box-shadow: 5px 10px 20px 1px #2e4053 !important;
+}
+
+
+.header-title {
+  font-family: 'Sans Serif', Times, serif;
+  font-size: 25px;
+}
+
+.card-body {
+  padding: 2rem 0 !important;
+}
+
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.card-footer-text {
+  padding: 1rem 0 !important;
+  font-size: 20px;
+}
+
+.button {
+  height: 35px;
+  border-radius: 6px;
+  border-color: #34495e;
+  background-color: #34495e;
+  color: #d2eaf7;
+  transition: 0.3s linear;
+}
+
+.button:hover {
+  background-color: #d2eaf7;
+  color: #34495e;
+  border-color: #d2eaf7;
+}

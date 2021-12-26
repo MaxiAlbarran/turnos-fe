@@ -1,16 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
-import CreateAppointment from './components/CreateAppointment/index';
-import AppointmentList from './components/AppointmentList/index';
+import MassagesList from './pages/MassagesList';
+import CreateAppointment from './pages/CreateAppointment';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import { useLocation } from 'react-router-dom';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Route path="/" exact component={CreateAppointment} />
-      <Route path="/turnos" exact component={AppointmentList} />
-    </BrowserRouter>
-  );
+  
+
+    return (
+      <div>
+        <BrowserRouter>
+          
+            <Switch >
+              <Route path='/' exact component={MassagesList} />
+              <Route
+                path='/createappointment/:id'
+                exact
+                component={CreateAppointment}
+              />
+            </Switch>
+        </BrowserRouter>
+      </div>
+    )
+  
+
+  
 }
 
 export default App;

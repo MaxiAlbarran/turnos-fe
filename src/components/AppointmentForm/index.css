@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title-massage {
+  text-align: center;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-register {
+  width: 600px;
+  background: rgb(212, 230, 241, 0.5);
+  padding: 30px;
+  margin-top: 25px;
+  margin-bottom: 70px;
+  margin-left:auto;
+  border-radius: 4px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: 0.3s linear;
+  
+}
+
+.form-register:hover{
+  box-shadow: 5px 10px 20px 1px #2e4053;
+}
+
+.label {
+  color: #24303c;
+  display: grid;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.controls {
+  width: 70%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  margin-bottom: 8px;
+  margin: auto;
+  border: 1px solid #d4e6f1;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  color: white;
+  transition: 0.3s linear;
+}
+
+.controls:hover {
+  background-color: #000000;
+  color: #fffff6;
+  border-color: #fffff6;
+}
+
+.container-error {
+  background-color: #ad3326;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: center;
+  width: 50%;
+  margin: auto;
+  border-radius: 6px;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: center;  
+  text-align: center;  
+  font-family: arial;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: #fffff6;
+  
+}
+
+.button-form {
+  width: 50%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5% 25% 5% 25%;
+  height: 35px;
+  border-radius: 5px;
+  border-color: #34495e;
+  background-color: #34495e;
+  color: #d2eaf7;
+  transition: 0.3s linear;
+}
+
+.button-form:hover {
+  background-color: #000000;
+  color: #fffff6;
+  border-color: #000000;
+}
+
+/*-------------------------------------------------------------Estilizando el input date y time---------------------------------------------------- */
+
+.date-time {
+  background-color: #24303c;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  color: #d4e6f1;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+
+.date-time:hover {
+  background-color: #000000;
+  color: #fffff6;
+  border-color: #fffff6;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #d4e6f1;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/*-------------------------------------------------------------Estilizando la etiqueta select---------------------------------------------------- */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+}
+
+select ::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  margin: auto;
+  width: 20rem;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 0.25em;
+}
+
+select {
+  flex: 1;
+  padding: 0 0.5em;
+  background-color: #24303c;
+  color: #ffff;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.select::after {
+  content: '\25bc';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #000;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+
+.select:hover:after {
+  color: #d4e6f1;
+}
